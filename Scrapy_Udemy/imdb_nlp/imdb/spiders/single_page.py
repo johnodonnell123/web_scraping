@@ -1,25 +1,26 @@
 # -*- coding: utf-8 -*-
 import scrapy
+import pandas as pd
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
-from scrapy.shell import inspect_response
 
 from ..items import ImdbItem
 
+df = pd.read_csv(r'starts_df.csv')
+starts = df['links'].astype(str).tolist()
 
-class MoviesSpider(CrawlSpider):
-    name = 'movies'
+
+class SinglePageSpider(CrawlSpider):
+    name = 'single_page'
     allowed_domains = ['imdb.com']
-    start_urls = ["http://www.imdb.com/search/title/?title_type=feature&languages=en&sort=num_votes,desc&view=simple"]
+    start_urls = starts
     
     rules = (
-        Rule(LinkExtractor(restrict_xpaths="//span[@class='lister-item-header']/span/a"), callback='parse_1', follow=True),
-        Rule(LinkExtractor(restrict_xpaths="(//a[@class='lister-page-next next-page'])[2]"))
+        Rule(LinkExtractor(restrict_xpaths="//h3[@class='lister-item-header']/a"), callback='parse_1', follow=True),
     )
 
 
     def parse_1(self, response):
-        # inspect_response(response,self)
         item = ImdbItem()
         
         item['movie_url'] = response.url
@@ -49,6 +50,3 @@ class MoviesSpider(CrawlSpider):
         item['synopsis'] = response.xpath("//ul[@id='plot-synopsis-content']//text()").getall()
         
         yield item
-
-
-    
