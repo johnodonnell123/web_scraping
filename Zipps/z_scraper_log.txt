@@ -1,0 +1,233 @@
+Starting Zipps Scrape: 2023-10-26 06:15:01 AM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 06:15:28 AM 
+
+Starting Zipps Scrape: 2023-10-26 06:30:01 AM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 06:30:22 AM 
+
+Starting Zipps Scrape: 2023-10-26 06:45:01 AM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 06:45:25 AM 
+
+Starting Zipps Scrape: 2023-10-26 07:00:01 AM
+Zipps Liquor - FM 1488: Failed Attempt #1
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 07:00:34 AM 
+
+Starting Zipps Scrape: 2023-10-26 07:15:01 AM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 07:15:24 AM 
+
+Starting Zipps Scrape: 2023-10-26 07:30:01 AM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 07:30:23 AM 
+
+Starting Zipps Scrape: 2023-10-26 07:45:01 AM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Failed Attempt #1
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 07:45:29 AM 
+
+Starting Zipps Scrape: 2023-10-26 08:00:01 AM
+Zipps Liquor - FM 1488: Failed Attempt #1
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 08:00:31 AM 
+
+Starting Zipps Scrape: 2023-10-26 08:15:01 AM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Failed Attempt #1
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 08:15:29 AM 
+
+Starting Zipps Scrape: 2023-10-26 08:30:01 AM
+Zipps Liquor - FM 1488: Failed Attempt #1
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 08:30:28 AM 
+
+Starting Zipps Scrape: 2023-10-26 08:45:02 AM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Caribou Crossing Single Barrel Canadian Whisky: 99.99 
+W.L. Weller 12 Year Kentucky Straight Bourbon Whiskey: 159.99 
+
+Finished Zipps Scrape: 2023-10-26 08:45:24 AM 
+
+Starting Zipps Scrape: 2023-10-26 09:00:01 AM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 09:00:27 AM 
+
+Starting Zipps Scrape: 2023-10-26 09:15:02 AM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 09:15:22 AM 
+
+-- changed here
+
+Starting Zipps Scrape: 2023-10-26 09:30:02 AM
+Zipps Liquor - FM 1488: Failed Attempt #1
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Starting Zipps Scrape: 2023-10-26 09:45:01 AM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Starting Zipps Scrape: 2023-10-26 10:00:01 AM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 10:00:34 AM 
+
+Starting Zipps Scrape: 2023-10-26 10:15:01 AM
+Zipps Liquor - FM 1488: Failed Attempt #1
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 10:15:28 AM 
+
+Starting Zipps Scrape: 2023-10-26 10:30:02 AM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 10:30:23 AM 
+
+Starting Zipps Scrape: 2023-10-26 10:45:01 AM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Failed Attempt #1
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 10:45:27 AM 
+
+Starting Zipps Scrape: 2023-10-26 11:00:01 AM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 11:00:31 AM 
+
+Starting Zipps Scrape: 2023-10-26 11:15:01 AM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 11:15:31 AM 
+
+Starting Zipps Scrape: 2023-10-26 11:30:02 AM
+Zipps Liquor - FM 1488: Failed Attempt #1
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 11:30:27 AM 
+
+Starting Zipps Scrape: 2023-10-26 11:45:02 AM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 11:45:27 AM 
+
+Starting Zipps Scrape: 2023-10-26 12:00:01 PM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 12:00:26 PM 
+
+Starting Zipps Scrape: 2023-10-26 12:15:01 PM
+Zipps Liquor - FM 1488: Failed Attempt #1
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Failed Attempt #1
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 12:15:37 PM 
+
+Starting Zipps Scrape: 2023-10-26 12:30:01 PM
+Zipps Liquor - FM 1488: Failed Attempt #1
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Failed Attempt #1
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 12:30:31 PM 
+
+Starting Zipps Scrape: 2023-10-26 12:45:01 PM
+Zipps Liquor - FM 1488: Failed Attempt #1
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 12:45:28 PM 
+
+Starting Zipps Scrape: 2023-10-26 01:00:01 PM
+Zipps Liquor - FM 1488: Failed Attempt #1
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 01:00:32 PM 
+
+Starting Zipps Scrape: 2023-10-26 01:15:01 PM
+Zipps Liquor - FM 1488: Failed Attempt #1
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Failed Attempt #1
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 01:15:28 PM 
+
+Starting Zipps Scrape: 2023-10-26 01:30:01 PM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 01:30:24 PM 
+
+Starting Zipps Scrape: 2023-10-26 01:45:01 PM
+Zipps Liquor - FM 1488: Failed Attempt #1
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 01:45:25 PM 
+
+Starting Zipps Scrape: 2023-10-26 02:00:01 PM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 02:00:23 PM 
+
+Starting Zipps Scrape: 2023-10-26 02:15:02 PM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Failed Attempt #1
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 02:15:29 PM 
+
+Starting Zipps Scrape: 2023-10-26 02:30:01 PM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 02:30:23 PM 
+
+Starting Zipps Scrape: 2023-10-26 02:45:01 PM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 02:45:28 PM 
+
+Starting Zipps Scrape: 2023-10-26 03:00:02 PM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 03:00:25 PM 
+
+Starting Zipps Scrape: 2023-10-26 03:15:02 PM
+Zipps Liquor - FM 1488: Failed Attempt #1
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 03:15:29 PM 
+
+Starting Zipps Scrape: 2023-10-26 03:30:02 PM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Failed Attempt #1
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 03:30:29 PM 
+
+Starting Zipps Scrape: 2023-10-26 03:45:02 PM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 03:45:24 PM 
+
+Starting Zipps Scrape: 2023-10-26 04:00:01 PM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 04:00:21 PM 
+
+Starting Zipps Scrape: 2023-10-26 04:15:02 PM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 04:15:23 PM 
+
+Starting Zipps Scrape: 2023-10-26 04:30:01 PM
+Zipps Liquor - FM 1488: Failed Attempt #1
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-10-26 04:30:28 PM 
+
