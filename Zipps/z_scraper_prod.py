@@ -306,8 +306,8 @@ if len(temp) > 0:
 # check if there is any need for an alert    
 if len(string) > 0:
     
-    account_sid = 'ACdef9e07346d59d4824ccdad578cadd42'
-    auth_token = 'c3bd88b76904b2f2368609d483968647'
+    account_sid = 'ACdef9e07346d59d4824ccdad578cadd421'
+    auth_token = 'c3bd88b76904b2f2368609d4839686471'
     client = Client(account_sid, auth_token)
     message = client.messages.create(
       from_='+18667542325',
