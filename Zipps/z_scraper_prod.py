@@ -158,23 +158,34 @@ for store in store_list:
 df = df[df['price'] != '']
 
 df['price'] = df['price'].astype(float)
-               
-# #read in records
-# records = pd.read_csv('Python/web_scraping/Zipps/records.csv')
+              
+# read in records (local vs cron hack)
 
-# # get new records
-# new_bottles = [i for i in df['bottles'].unique() if i not in records['bottles'].unique()]
+try:
+    records = pd.read_csv('Python/web_scraping/Zipps/records.csv')
+    
+except:
+    records = pd.read_csv('records.csv')
 
-# # subset dataframe 
-# new = df[df['bottles'].isin(new_bottles)]
+# get new records
+new_bottles = [i for i in df['bottles'].unique() if i not in records['bottles'].unique()]
 
-# # append new records
-# records = pd.concat([records, new], ignore_index=True)
+# subset dataframe 
+new = df[df['bottles'].isin(new_bottles)]
 
-# # write out records
-# records.sort_values(by='ts',ascending=False).to_csv('Python/web_scraping/Zipps/records.csv',index=False)
+# append new records
+records = pd.concat([records, new], ignore_index=True)
 
-## TODO: ADD NEW RECORDS TO STRING?
+# write out records (local vs cron hack)
+try:
+    records.sort_values(by='ts',ascending=False).to_csv('Python/web_scraping/Zipps/records.csv',index=False)
+    
+except:
+    records.sort_values(by='ts',ascending=False).to_csv('records.csv',index=False)
+
+    
+
+# TODO: ADD NEW RECORDS TO STRING?
 
 # define string to text to phone if warranted
 string = ''
@@ -303,7 +314,8 @@ if len(temp) > 0:
         string += f'{a}: {b} \n'
 
         
-# ------        
+# ------ 
+
 CARRIERS = {"att": "@mms.att.net"}
  
 EMAIL = "johnodonnell123@gmail.com"
@@ -327,19 +339,7 @@ carrier = 'att'
 # check if there is any need for an alert    
 if len(string) > 0:
     
-<<<<<<< HEAD
     send_message(phone_number, carrier, 'Check Zipps!!!')
-=======
-    account_sid = 'ACdef9e07346d59d4824ccdad578cadd421'
-    auth_token = 'c3bd88b76904b2f2368609d4839686471'
-    client = Client(account_sid, auth_token)
-    message = client.messages.create(
-      from_='+18667542325',
-      body=string,
-      to='+19365370533'
-    )
->>>>>>> ed41d198fce7e36a39d0898d58b22a7165377c39
-    
     print('<<>> Found <<>>: ' + string)
 
 
@@ -347,8 +347,4 @@ if len(string) > 0:
 # Get current date and time
 dt = datetime.datetime.today()
 dt = dt.strftime("%Y-%m-%d %I:%M:%S %p")
-<<<<<<< HEAD
-print(f'Finished Zipps Scrape: {dt}')
-=======
 print(f'Finished Zipps Scrape: {dt} \n')
->>>>>>> ed41d198fce7e36a39d0898d58b22a7165377c39
