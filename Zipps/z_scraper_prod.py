@@ -327,7 +327,18 @@ carrier = 'att'
 # check if there is any need for an alert    
 if len(string) > 0:
     
+<<<<<<< HEAD
     send_message(phone_number, carrier, 'Check Zipps!!!')
+=======
+    account_sid = 'ACdef9e07346d59d4824ccdad578cadd421'
+    auth_token = 'c3bd88b76904b2f2368609d4839686471'
+    client = Client(account_sid, auth_token)
+    message = client.messages.create(
+      from_='+18667542325',
+      body=string,
+      to='+19365370533'
+    )
+>>>>>>> ed41d198fce7e36a39d0898d58b22a7165377c39
     
     print('<<>> Found <<>>: ' + string)
 
@@ -336,4 +347,8 @@ if len(string) > 0:
 # Get current date and time
 dt = datetime.datetime.today()
 dt = dt.strftime("%Y-%m-%d %I:%M:%S %p")
+<<<<<<< HEAD
 print(f'Finished Zipps Scrape: {dt}')
+=======
+print(f'Finished Zipps Scrape: {dt} \n')
+>>>>>>> ed41d198fce7e36a39d0898d58b22a7165377c39
