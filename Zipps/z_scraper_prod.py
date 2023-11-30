@@ -7,7 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
-from twilio.rest import Client
+import smtplib
 import time
 
 
@@ -17,7 +17,7 @@ dt = datetime.datetime.today()
 # Format datetime string
 dt = dt.strftime("%Y-%m-%d %I:%M:%S %p")
 
-print(f'Starting Zipps Scrape: {dt}')
+print(f'\nStarting Zipps Scrape: {dt}')
 
 # create empty dataframe to store scraped data from all the stores
 df = pd.DataFrame()
@@ -153,23 +153,26 @@ for store in store_list:
 
     # Close the browser
     driver.quit()
-        
-df['price'] = df['price'].astype(float)        
-        
-#read in records
-records = pd.read_csv('Python/web_scraping/Zipps/records.csv')
+    
+    
+df = df[df['price'] != '']
 
-# get new records
-new_bottles = [i for i in df['bottles'].unique() if i not in records['bottles'].unique()]
+df['price'] = df['price'].astype(float)
+               
+# #read in records
+# records = pd.read_csv('Python/web_scraping/Zipps/records.csv')
 
-# subset dataframe 
-new = df[df['bottles'].isin(new_bottles)]
+# # get new records
+# new_bottles = [i for i in df['bottles'].unique() if i not in records['bottles'].unique()]
 
-# append new records
-records = pd.concat([records, new], ignore_index=True)
+# # subset dataframe 
+# new = df[df['bottles'].isin(new_bottles)]
 
-# write out records
-records.to_csv('Python/web_scraping/Zipps/records.csv',index=False)
+# # append new records
+# records = pd.concat([records, new], ignore_index=True)
+
+# # write out records
+# records.sort_values(by='ts',ascending=False).to_csv('Python/web_scraping/Zipps/records.csv',index=False)
 
 ## TODO: ADD NEW RECORDS TO STRING?
 
@@ -179,7 +182,7 @@ string = ''
 #----------------- EH Taylor -------------------
 
 temp = df[(df['bottles'].str.contains('colonel|EH Taylor|EH|Taylor', na=False, case=False)) 
-              & (df['bottles'].str.contains('single', na=False, case=False))
+              & (df['bottles'].str.contains('single|barrel|proof', na=False, case=False))
               & (~df['bottles'].str.contains('small|warehouse', na=False, case=False))
             ]
 
@@ -219,7 +222,7 @@ if len(temp) > 0:
 
 #----------------- blantons -------------------
 temp = df[(df['bottles'].str.contains('blanton', na=False, case=False))
-              & (df['price'] <= 100)
+              & (df['price'] <= 80)
          ]
 
 if len(temp) > 0:
@@ -267,7 +270,7 @@ temp = df[(df['bottles'].str.contains('coy', na=False, case=False))
 
 if len(temp) > 0:
     for a,b in zip(temp['bottles'].unique(),temp['price'].unique()):
-        string += f'{a}: {b} \n'
+        string += f'{a}: {b} \n JDCH goes for 300-400 \n'
 
 #----------------- weller -------------------
 temp = df[(df['bottles'].str.contains('weller', na=False, case=False)) 
@@ -281,6 +284,7 @@ if len(temp) > 0:
 
 #----------------- jack daniels -------------------
 temp = df[(df['bottles'].str.contains('daniel', na=False, case=False)) 
+                  & (df['bottles'].str.contains('jack', na=False, case=False))
                   & (df['bottles'] != 'Jack Daniels Year Old Tennessee Whiskey Batch 2')
                   & (~df['bottles'].str.contains('gold', na=False, case=False))
          ]
@@ -299,27 +303,37 @@ if len(temp) > 0:
         string += f'{a}: {b} \n'
 
         
-        
-        
-        
+# ------        
+CARRIERS = {"att": "@mms.att.net"}
+ 
+EMAIL = "johnodonnell123@gmail.com"
+PASSWORD = "vcqe kxvm ruaw djhz"
+ 
+def send_message(phone_number, carrier, message):
+    recipient = phone_number + CARRIERS[carrier]
+    auth = (EMAIL, PASSWORD)
+ 
+    server = smtplib.SMTP("smtp.gmail.com", 587)
+    server.starttls()
+    server.login(auth[0], auth[1])
+ 
+    server.sendmail(auth[0], recipient, message)
+ 
+ 
+phone_number = '9365370533'
+carrier = 'att'
+
 
 # check if there is any need for an alert    
 if len(string) > 0:
     
-    account_sid = 'ACdef9e07346d59d4824ccdad578cadd42'
-    auth_token = 'c3bd88b76904b2f2368609d483968647'
-    client = Client(account_sid, auth_token)
-    message = client.messages.create(
-      from_='+18667542325',
-      body=string,
-      to='+19365370533'
-    )
+    send_message(phone_number, carrier, 'Check Zipps!!!')
     
-    print(string)
+    print('<<>> Found <<>>: ' + string)
 
 
 # Format datetime string
 # Get current date and time
 dt = datetime.datetime.today()
 dt = dt.strftime("%Y-%m-%d %I:%M:%S %p")
-print(f'Finished Zipps Scrape: {dt} \n')
+print(f'Finished Zipps Scrape: {dt}')
