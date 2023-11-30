@@ -4553,3 +4553,9 @@ Starting Zipps Scrape: 2023-11-30 06:15:02 AM
 Zipps Liquor - FM 1488: Success
 Zipps Liquor - Conroe HWY 242: Success
 Finished Zipps Scrape: 2023-11-30 06:15:26 AM
+
+Starting Zipps Scrape: 2023-11-30 06:40:01 AM
+Zipps Liquor - FM 1488: Success
+Zipps Liquor - Conroe HWY 242: Success
+Finished Zipps Scrape: 2023-11-30 06:40:25 AM 
+

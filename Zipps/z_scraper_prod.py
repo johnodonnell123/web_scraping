@@ -24,12 +24,11 @@ df = pd.DataFrame()
 
 # define list of stores to scrape
 store_list = ['Zipps Liquor - FM 1488',
-              'Zipps Liquor - Conroe HWY 242',
-#               'Zipps Liquor - Magnolia'
+              'Zipps Liquor - Conroe HWY 242'
              ]
 
 # define max attempts when program fails (per store)
-max_attempts = 5
+max_attempts = 3
 
 # loop through stores
 for store in store_list:
@@ -37,6 +36,7 @@ for store in store_list:
     # define counter for failed attempts
     attempt = 1
    
+    # loop until the number of failed attempts reaches the max
     while attempt <= max_attempts:
 
         # try becuase sometimes the chrome webdriver randomly fails
@@ -48,7 +48,7 @@ for store in store_list:
             # create a dataframe to store the data from this store
             df_store = pd.DataFrame()
         
-            # Set up Selenium WebDriver 
+            # Set up Selenium WebDriver, run headless so no window appears
             chrome_options = Options()
             chrome_options.add_argument("--headless")
             driver = webdriver.Chrome(options=chrome_options)
@@ -140,11 +140,11 @@ for store in store_list:
         # if the program fails
         except Exception as e:
             
-                # if this is the final attempt print the final failure message 
+            # if final attempt, print the final failure message and just move on
             if attempt >= (max_attempts - 1):
                 print(f'{store}: Final Failure')
 
-            # if this isn't the final attempt print the a failure message and try again
+            # if not the final attempt, print a failure message and try again
             else:
                 print(f'{store}: Failed Attempt #{attempt}')
 
@@ -155,12 +155,13 @@ for store in store_list:
     driver.quit()
     
     
+# drop any bad data points
 df = df[df['price'] != '']
 
+# get the price
 df['price'] = df['price'].astype(float)
               
 # read in records (local vs cron hack)
-
 try:
     records = pd.read_csv('Python/web_scraping/Zipps/records.csv')
     
@@ -339,7 +340,7 @@ carrier = 'att'
 # check if there is any need for an alert    
 if len(string) > 0:
     
-    send_message(phone_number, carrier, 'Check Zipps!!!')
+    send_message(phone_number, carrier, 'Check Zipps!!! \n' + string)
     print('<<>> Found <<>>: ' + string)
 
 
